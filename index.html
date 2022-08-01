@@ -19,22 +19,21 @@
       </nav>
 
       <div class="lista-filme">
-            <div class="filme">
+
+            <div class="filme" ng-repeat="filme in filmes">
 
                 <div class="foto-title-filme">
                  
-                <img src="https://br.web.img2.acsta.net/pictures/22/05/16/17/59/5165498.jpg" alt="">
+                <img ng-src="{{ filme.cartaz }}" alt="Cartaz de {{ filme.titulo }}">
                 </div>
 
                 <div class="details-filme">
-                    <h3>Tudo em todo o lugar o tempo todo</h3>
+                    <h3>{{filme.titulo}}</h3>
                     <ul>
-                        <li><strong>Ano:</strong> 2022 </li>
-                        <li><strong>Produtora:</strong> Fox </li>
+                        <li><strong>Ano:</strong> {{ filme.ano }}</li>
+                        <li><strong>Produtora:</strong> {{ filme.produtora }} </li>
                     </ul>
-                    <p>
-                        Cheio de ação e humor, conta a história de Evelyn Wang (Michelle Yeoh) uma mulher que se envolve por acaso em uma aventura multidimensional que coloca o destino de todos os universos em suas mãos - e também a faz questionar quem ela é para si mesma e sua família.
-                    </p> 
+                    <p> {{filme.sinopse}} </p> 
                     <button>Excluir</button>
                 </div>
                 
