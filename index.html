@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Filmes">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja angular</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="/js/filmes.module.js"></script>
+    <script src="/js/filmes.controller.js"></script>
+  </head>
+  <body ng-controller="FilmesController">
+    <div class="container-lista">
+
+      <nav class="nav-logo"> 
+        <h1>{{ titulo }}</h1>
+      </nav>
+
+      <div class="lista-filme">
+            <div class="filme">
+
+                <div class="foto-title-filme">
+                 
+                <img src="https://br.web.img2.acsta.net/pictures/22/05/16/17/59/5165498.jpg" alt="">
+                </div>
+
+                <div class="details-filme">
+                    <h3>Tudo em todo o lugar o tempo todo</h3>
+                    <ul>
+                        <li><strong>Ano:</strong> 2022 </li>
+                        <li><strong>Produtora:</strong> Fox </li>
+                    </ul>
+                    <p>
+                        Cheio de ação e humor, conta a história de Evelyn Wang (Michelle Yeoh) uma mulher que se envolve por acaso em uma aventura multidimensional que coloca o destino de todos os universos em suas mãos - e também a faz questionar quem ela é para si mesma e sua família.
+                    </p> 
+                    <button>Excluir</button>
+                </div>
+                
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
