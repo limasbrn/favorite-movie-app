@@ -40,5 +40,11 @@ angular.module("Filmes").controller("FilmesController", function($scope) {
         $scope.novoFilme = {};
 
     }
+    
+    $scope.menuActive = function(){
+        $scope("container-form").addClass('active')
+        $scope("btn-modal").addClass('inactive')
+        
+    }
 
 });
