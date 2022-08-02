@@ -36,15 +36,12 @@ angular.module("Filmes").controller("FilmesController", function($scope) {
         var filme = angular.copy($scope.novoFilme);
 
         $scope.filmes.push(filme);
+        window.alert("Filme adicionado com sucesso")
 
         $scope.novoFilme = {};
 
     }
     
-    $scope.menuActive = function(){
-        $scope("container-form").addClass('active')
-        $scope("btn-modal").addClass('inactive')
-        
-    }
+   
 
 });
